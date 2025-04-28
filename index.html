@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 3</title>
+</head>
+<body>
+    
+    <h1>Графік роботи пристроїв</h1>
+    <table id="scheduleTable">
+        <thead>
+            <tr>
+                <th>Пристрій</th>
+                <th>Стан</th>
+                <th>Година</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" placeholder="Назва пристрою" /></td>
+                <td>
+                    <select>
+                        <option value="true">Увімкнено</option>
+                        <option value="false">Вимкнено</option>
+                    </select>
+                </td>
+                <td><input type="time" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="addRowButton">Додати рядок</button>
+    <button id="executeScheduleButton">Виконати графік</button>
+    <button id="undoButton">Скасувати останнє</button>
+
+    <h2>Історія виконаних команд:</h2>
+    <pre id="historyOutput"></pre>
+
+
+    <script src="./scr.js"></script>    
+</body>
+</html>
